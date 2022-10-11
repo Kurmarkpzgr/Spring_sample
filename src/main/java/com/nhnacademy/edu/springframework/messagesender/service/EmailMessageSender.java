@@ -18,6 +18,9 @@ public class EmailMessageSender implements MessageSender {
 
   @Override
   public void sendMessage(User user, String message) {
+    System.out.println("<------------------------------------->");
+    System.out.println("email : " + user.getEmail());
+    System.out.println("phone Num : " + user.getPhoneNumber());
     System.out.println("--------------------- E-mail Message");
     System.out.println(message);
     this.user = user;

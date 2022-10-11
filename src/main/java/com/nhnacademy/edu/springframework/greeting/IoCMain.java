@@ -5,6 +5,6 @@ import com.nhnacademy.edu.springframework.greeting.service.KoreanGreeter;
 
 public class IoCMain {
   public static void main(String[] args) {
-    new GreetingService(new KoreanGreeter()).doGreet();
+   // new GreetingService(new KoreanGreeter()).doGreet();
   }
 }

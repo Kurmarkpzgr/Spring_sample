@@ -7,9 +7,11 @@ import com.nhnacademy.edu.springframework.messagesender.service.SmsMessageSender
 public class Main {
 
   public static void main(String[] args) {
-    User user = new User("kuitae0725@gmail.com", "01074860725");
-    new MessageSendService(new SmsMessageSender()).doSendMessage(user, "this is message");
-    new MessageSendService(new EmailMessageSender()).doSendMessage(user, "this is message");
+
+//    User user = new User("kuitae0725@gmail.com", "01074860725");
+//    new MessageSendService(new SmsMessageSender()).doSendMessage(user, "this is message");
+//    new MessageSendService(new EmailMessageSender()).doSendMessage(user, "this is message");
+
   }
 
     /*

@@ -4,11 +4,22 @@ import com.nhnacademy.edu.springframework.messagesender.User;
 
 public class MessageSendService {
 
-  private final MessageSender messageSender;
+//  private final MessageSender smsMessageSender;
+//  private final MessageSender emailMessageSender;
 
-  public MessageSendService(MessageSender messageSender) {
+  private MessageSender messageSender;
+
+  public MessageSendService() {
+  }
+
+  public void setSmsMessageSender(MessageSender messageSender){
+    System.out.println("Message sender Invoked");
     this.messageSender = messageSender;
   }
+//  public MessageSendService(MessageSender smsMessageSender, MessageSender emailMessageSender){
+//    this.smsMessageSender = smsMessageSender;
+//    this.emailMessageSender = emailMessageSender;
+//  }
 
   public void doSendMessage(User user, String message) {
     messageSender.sendMessage(user, message);

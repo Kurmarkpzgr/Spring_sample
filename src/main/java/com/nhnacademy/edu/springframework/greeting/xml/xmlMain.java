@@ -18,17 +18,18 @@ public class xmlMain {
 
     try (ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("beans.xml")) {
 
-      System.out.println("---------");
-      new GreetingService(context.getBean("koreanGreeter", Greeter.class)).doGreet();
-      System.out.println("---------");
-      new GreetingService(context.getBean("koreanGreeter", Greeter.class)).doGreet();
-      System.out.println("---------");
-      new GreetingService(context.getBean("englishGreeter", Greeter.class)).doGreet();
-      System.out.println("---------");
-      new GreetingService(context.getBean("englishGreeter", Greeter.class)).doGreet();
-      System.out.println("---------");
-
-      context.close();
+//      String bar = "---------";
+//      System.out.println(bar);
+//      new GreetingService(context.getBean("koreanGreeter", Greeter.class)).doGreet();
+//      System.out.println(bar);
+//      new GreetingService(context.getBean("koreanGreeter", Greeter.class)).doGreet();
+//      System.out.println(bar);
+//      new GreetingService(context.getBean("englishGreeter", Greeter.class)).doGreet();
+//      System.out.println(bar);
+//      new GreetingService(context.getBean("englishGreeter", Greeter.class)).doGreet();
+//      System.out.println(bar);
+//
+//      context.close();
     }
   }
 
