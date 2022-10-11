@@ -10,7 +10,7 @@ public class MessageSendService {
     this.messageSender = messageSender;
   }
 
-  public void doSendMessage() {
-    messageSender.sendMessage(new User("kuitae0725@gmail.com", "01074860725"));
+  public void doSendMessage(User user, String message) {
+    messageSender.sendMessage(user, message);
   }
 }
